@@ -6,7 +6,7 @@ build:
   tools:
     python: "3.10"
   commands:
-    - apt install jekyll
+    - sudo apt-get install jekyll
     - bundle install
     - bundle exec jekyll build -d _readthedocs/html/
 
