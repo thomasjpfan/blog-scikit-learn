@@ -7,6 +7,9 @@ build:
     python: "3.9"
   apt_packages:
     - jekyll
-  commands:
-    - bundle install
+  jobs:
+    pre_build:
+      - bundle install
+    post_build:
+      - bundle exec jekyll build -d _readthedocs/html/
 
