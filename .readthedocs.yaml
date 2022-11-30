@@ -3,9 +3,10 @@ version: 2
 # Set the version of Python and other tools you might need
 build:
   os: ubuntu-20.04
-  build:
-    apt_packages:
-      - jekyll
+  tools:
+    python: "3.10"
+  apt_packages:
+    - jekyll
   commands:
     - bundle install
     - bundle exec jekyll build -d _readthedocs/html/
